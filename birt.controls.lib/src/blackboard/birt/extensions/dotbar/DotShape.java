@@ -141,10 +141,7 @@ public class DotShape
    */
   public static String[] getNames()
   {
-	  final String[] newArray = new String[names.length];
-	  for(int i = 0; i < names.length; i++)
-		  newArray[i] = names[i];
-	  return newArray;
+    return Arrays.copyOf( names, names.length );
   }
 
   /**

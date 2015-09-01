@@ -1,0 +1,29 @@
+The easiest way to get this plugin is to use the Eclipse Update Manager.
+
+This project shares an update manager with several other sites, but the update site allows
+you to pick and choose and only grab the plugins that you want.
+
+If you are familiar with using the Eclipse Update manager, then all you will need is the update URLs.
+
+For BIRT 2.5.1 the update URL is.  Full update instructions at [2.5 & 2.6 Install](http://code.google.com/a/eclipselabs.org/p/birt-innovent-update/wiki/install_251)
+```
+ http://svn.codespot.com/a/eclipselabs.org/birt-innovent-update/2.5.2
+```
+
+For BIRT 2.3.2 the update URL is.  Full update instructions at [2.3.2 Install](http://code.google.com/a/eclipselabs.org/p/birt-innovent-update/wiki/install_232)
+```
+ http://svn.codespot.com/a/eclipselabs.org/birt-innovent-update/2.3.2
+```
+
+When deploying to a ReportEngine you need to be move the plugin jar files to the
+plugins directory of your Report Engine.
+
+If you are using a stand-alone container, place the jar in:
+```
+	$BIRT_HOME/plugins
+```
+If you are using a web based platform, the use the following directory:
+```
+	$WEB-INF/platform/plugins
+```
+
